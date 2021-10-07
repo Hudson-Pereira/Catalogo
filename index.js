@@ -32,5 +32,10 @@ app.get("/cadastro", (req, res) => {
     res.render("cadastro", {titulo: titulo});
 });
 
+app.get("/details", (req, res) => {
+    titulo = "DETALHES";
+    res.render("details", {titulo: titulo});
+});
+
 //liga o servidor na porta 3000
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
