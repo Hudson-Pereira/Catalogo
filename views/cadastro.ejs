@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= titulo %></title>
+</head>
+<body>
+    <nav>
+        <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
+        <a href="./lista"><input type="button" value="LISTA" id="nav"></button></a>
+    </nav>
+    <header>
+        <h1><%= titulo %></h1>
+    </header>
+    <main>
+        <section id = "form">
+            <form id="dados" action="./index" method="GET">
+                <label for = "nome" id="label"><h3>Nome</h3></label>
+                    <article><input type="text" id="nome" placeholder="Insira o nome"></article>
+                <label for = "especie" id="label"><h3>Espécie</h3></label>
+                    <article><input type="text" id="especie" placeholder="Insira a espécie"></article>
+                <label for = "peso" id="label"><h3>Peso</h3></label>
+                    <article><input type="text" id="peso" placeholder="Insira o peso"></article>
+                <label for = "altura" id="label"><h3>Altura</h3></label>    
+                    <article><input type="text" id="altura" placeholder="Insira altura"></article>
+                <label for = "alimentacao" id="label"><h3>Alimentação</h3></label>        
+                    <article><input type="text" id="alimentacao" placeholder="Carnívoro, herbívoro..."></article>
+            
+                <button type="submit" id="nav">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+<script src="/js/cadastro.js"></script>    
+</body>
+</html>

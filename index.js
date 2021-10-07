@@ -13,8 +13,23 @@ app.get("/", (req, res) => {
 });
 
 app.get("/index", (req, res) => {
-    const titulo = "Catálogo";
+    const titulo = "PÁGINA INICIAL";
     res.render("index", {titulo: titulo} );
+});
+
+app.get("/lista", (req, res) => {
+    const titulo = "CATÁLOGO";
+    res.render("lista", {titulo: titulo});
+});
+
+app.post("/lista", (req, res) => {
+    
+    res.render("lista");
+});
+
+app.get("/cadastro", (req, res) => {
+    titulo = "CADASTRO";
+    res.render("cadastro", {titulo: titulo});
 });
 
 //liga o servidor na porta 3000

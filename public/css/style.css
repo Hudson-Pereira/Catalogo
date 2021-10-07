@@ -3,3 +3,36 @@ body{
     padding: 0px;
     background-color: #40E0D0;
 }
+
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+}
+
+#nav{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+/* cadastro */
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+#nome, #especie, #peso, #altura, #alimentacao{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
