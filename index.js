@@ -23,6 +23,16 @@ app.get("/catalogo", (req, res) => {
 });
 
 app.post("/catalogo", (req, res) => {
+    const { nome, força, velocidade, habilidade, equipamento, inteligencia, poder } = req.body
+    const novo = {
+        Nome: nome,
+        Força: força,
+        Velocidade: velocidade,
+        Habilidade: habilidade,
+        Equipamento: equipamento,
+        Inteligência: inteligencia,
+        Poder: poder
+    }
     res.render("catalogo");
 });
 
