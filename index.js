@@ -32,9 +32,9 @@ app.get("/cadastro", (req, res) => {
     res.render("cadastro", { titulo: titulo });
 });
 
-app.get("/details", (req, res) => {
+app.get("/detalhes", (req, res) => {
     titulo = "DETALHES";
-    res.render("details", { titulo: titulo });
+    res.render("detalhes", { titulo: titulo });
 });
 
 //liga o servidor na porta 3000
