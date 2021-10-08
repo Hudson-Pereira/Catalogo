@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title><% titulo %></title>
+    <title>
+        <%= titulo %>
+    </title>
 </head>
+
 <body id="details">
     <nav>
         <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
@@ -15,7 +19,19 @@
     </nav>
     </nav>
     <header>
-        <h1><%= titulo %></h1>
+        <h1>
+            <%= titulo %>
+        </h1>
+        <section>
+            <br>Nome: <%=novoHeroi.Nome%>
+                <br>Força: <%=novoHeroi.Força%>
+                    <br>Velocidade: <%=novoHeroi.Velocidade%>
+                        <br>Habilidade: <%=novoHeroi.Habilidade%>
+                            <br>Equipamento: <%=novoHeroi.Equipamento%>
+                                <br>Inteligência: <%=novoHeroi.Inteligência%>
+                                    <br>Poder: <%=novoHeroi.Poder%>
+        </section>
     </header>
 </body>
+
 </html>

@@ -9,12 +9,12 @@ app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
 app.use(express.urlencoded({ extended: true }));
 
 const herois = [{
-    Nome: 'Homem de Ferro',
-    'Força': 5,
+    Nome: "Homem de Ferro",
+    "Força": 5,
     Velocidade: 5,
     Habilidade: 5,
     Equipamento: 10,
-    'Inteligência': 10,
+    "Inteligência": 10,
     Poder: 1
 }]
 
@@ -36,16 +36,17 @@ app.post("/catalogo", (req, res) => {
     const { nome, forca, velocidade, habilidade, equipamento, inteligencia, poder } = req.body
     const novoHeroi = {
         Nome: nome,
-        'Força': forca,
+        "Força": forca,
         Velocidade: velocidade,
         Habilidade: habilidade,
         Equipamento: equipamento,
-        'Inteligência': inteligencia,
+        "Inteligência": inteligencia,
         Poder: poder
     }
     herois.push(novoHeroi);
-    mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
-    res.render("detalhes", mensagem);
+    //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
+    const titulo = "CATÁLOGO";
+    res.render("detalhes", { titulo: titulo }); //precisa renderizar /detalhes pra não dar erro?
 });
 
 app.get("/cadastro", (req, res) => {
