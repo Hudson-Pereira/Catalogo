@@ -1,20 +1,20 @@
 const express = require("express");//importa modulo express
 const path = require("path"); //importando path
-
 const app = express();//instancia uma referencia do express no projeto
 const port = process.env.PORT || 3000;// set port usando a var de ambiente ou a porta 3000.
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
+
 app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
 app.use(express.urlencoded({ extended: true }));
 
-const heroi = [{
+const herois = [{
     Nome: 'Homem de Ferro',
-    Força: 5,
+    'Força': 5,
     Velocidade: 5,
     Habilidade: 5,
     Equipamento: 10,
-    Inteligência: 10,
+    'Inteligência': 10,
     Poder: 1
 }]
 
@@ -33,19 +33,19 @@ app.get("/catalogo", (req, res) => {
 });
 
 app.post("/catalogo", (req, res) => {
-    const { nome, força, velocidade, habilidade, equipamento, inteligencia, poder } = req.body
+    const { nome, forca, velocidade, habilidade, equipamento, inteligencia, poder } = req.body
     const novoHeroi = {
         Nome: nome,
-        Força: força,
+        'Força': forca,
         Velocidade: velocidade,
         Habilidade: habilidade,
         Equipamento: equipamento,
-        Inteligência: inteligencia,
+        'Inteligência': inteligencia,
         Poder: poder
     }
-    heroi.push(novoHeroi);
-    message = `${novoHeroi.Nome} cadastrado com sucesso!`
-    res.render("catalogo");
+    herois.push(novoHeroi);
+    mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
+    res.render("detalhes", mensagem);
 });
 
 app.get("/cadastro", (req, res) => {
@@ -55,9 +55,9 @@ app.get("/cadastro", (req, res) => {
 
 app.get("/detalhes/:id", (req, res) => {
     const id = req.params.id
-    const heroi = heroi[id]
+    const novoHeroi = herois[id]
     titulo = "DETALHES";
-    res.render("detalhes", { titulo: titulo });
+    res.render("detalhes", { titulo: titulo, novoHeroi });
 });
 
 //liga o servidor na porta 3000
