@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;// set port usando a var de ambiente ou a 
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
     res.redirect("/index");
@@ -14,27 +14,27 @@ app.get("/", (req, res) => {
 
 app.get("/index", (req, res) => {
     const titulo = "PÁGINA INICIAL";
-    res.render("index", {titulo: titulo} );
+    res.render("index", { titulo: titulo });
 });
 
 app.get("/lista", (req, res) => {
     const titulo = "CATÁLOGO";
-    res.render("lista", {titulo: titulo});
+    res.render("lista", { titulo: titulo });
 });
 
 app.post("/lista", (req, res) => {
-    
+
     res.render("lista");
 });
 
 app.get("/cadastro", (req, res) => {
     titulo = "CADASTRO";
-    res.render("cadastro", {titulo: titulo});
+    res.render("cadastro", { titulo: titulo });
 });
 
 app.get("/details", (req, res) => {
     titulo = "DETALHES";
-    res.render("details", {titulo: titulo});
+    res.render("details", { titulo: titulo });
 });
 
 //liga o servidor na porta 3000
