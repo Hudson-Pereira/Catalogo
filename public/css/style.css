@@ -51,20 +51,49 @@ header {
 
 h3{
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 #nome, #forca, #vel, #hab, #equip, #int, #poder{
     display: flex;
-    justify-content: center;
     border-radius: 10px;
     width: 200px;
     height: 30px;
 }
 
+#labelF, #forca{
+    margin-left: 80px;
+}
+
+#labelV, #vel{
+    margin-left: 160px;
+}
+
+#labelH, #hab{
+    margin-left: 240px;
+}
+
+#labelE, #equip{
+    margin-left: 320px;
+}
+
+#labelI, #int{
+    margin-left: 400px;
+}
+
+#labelP, #poder{
+    margin-left: 480px;
+}
+
 #dados{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;   
+}
+
+#nav2{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    width: 50px;
 }
