@@ -8,6 +8,10 @@ app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
 app.use(express.urlencoded({ extended: true }));
 
+// variaveis
+
+let herois = [{nome: "Superman", forca: 10, vel: 10, hab: 8, equip: 2, int: 7, poder: 10}];
+
 app.get("/", (req, res) => {
     res.redirect("/index");
 });
@@ -19,7 +23,8 @@ app.get("/index", (req, res) => {
 
 app.get("/catalogo", (req, res) => {
     const titulo = "CATÁLOGO";
-    res.render("catalogo", {titulo: titulo});
+
+    res.render("catalogo", {titulo: titulo, herois: herois});
 });
 
 app.post("/catalogo", (req, res) => {

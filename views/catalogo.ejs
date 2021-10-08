@@ -16,6 +16,15 @@
     <header>
         <h1><%= titulo %></h1>
     </header>
+    <main>
+        <section>
+        <% herois.forEach(item => { %>
+            <ul>
+                <li>Nome: <%= item.nome %></li>
+            </ul>
+        <% }) %>
+        </section>
+    </main>
 
 <script src="js/lista.js"></script>
 </body>
