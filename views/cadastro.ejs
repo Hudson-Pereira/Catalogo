@@ -8,7 +8,7 @@
     <title><%= titulo %></title>
 </head>
 <body id="new">
-    <nav>
+    <nav id="C">
         <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
         <a href="./catalogo"><input type="button" value="LISTA" id="nav"></button></a>
         <!-- tirar botao de detalhes -->
@@ -18,7 +18,7 @@
     </header>
     <main>
         <section id = "form">
-            <form id="dados" action="./catalogo" method="POST">
+            <form id="dados" action="./detalhes" method="POST">
                 <label for = "nome" id="labelN"><h3>Nome</h3></label>
                     <article><input type="text" id="nome" placeholder="Insira o nome"></article>
                 <label for = "forca" id="labelF"><h3>Força</h3></label>

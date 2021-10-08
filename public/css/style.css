@@ -5,7 +5,8 @@ body{
 }
 
 body#inicio{
-    background: url("/img/inicio.jpg"); 
+    background: url("/img/bannermarvel.jpg"); 
+    background-repeat: no-repeat;
     background-size: 100%;
     color: white;
 }
@@ -17,7 +18,7 @@ body#lista{
 }
 
 body#new{
-    background: url("/img/homem-ferro.jpg"); 
+    background: url("/img/hulk.jpg"); 
     background-size: 100%;
     color: white;
 }
@@ -33,6 +34,22 @@ a{
 }
 nav{
     display: flex;
+    background-color: rgb(63, 85, 133);
+}
+
+nav#L{
+    display: flex;
+    background-color: rgb(105, 31, 22);
+}
+
+nav#C{
+    display: flex;
+    background-color: rgb(61, 81, 20);
+}
+
+nav#D{
+    display: flex;
+    background-color: rgb(1, 8, 18);
 }
 
 #nav{
@@ -40,6 +57,13 @@ nav{
     background-color: white;
     border-radius: 20px;
     margin: 15px;
+}
+/* inicio */
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
 /* cadastro */
