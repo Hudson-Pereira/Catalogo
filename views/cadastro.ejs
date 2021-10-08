@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title><%= titulo %></title>
+    <title>
+        <%= titulo %>
+    </title>
 </head>
+
 <body>
     <nav>
         <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
-        <a href="./lista"><input type="button" value="LISTA" id="nav"></button></a>
+        <a href="./catalogo"><input type="button" value="LISTA" id="nav"></button></a>
     </nav>
     <header>
-        <h1><%= titulo %></h1>
+        <h1>
+            <%= titulo %>
+        </h1>
     </header>
     <main>
-        <section id = "form">
+        <section id="form">
             <form id="dados" action="./index" method="GET">
-                <label for = "nome" id="label"><h3>Nome</h3></label>
-                    <article><input type="text" id="nome" placeholder="Insira o nome"></article>
-                <label for = "especie" id="label"><h3>Força</h3></label>
-                    <article><input type="text" id="especie" placeholder="Insira o nível de força"></article>
-                <label for = "peso" id="label"><h3>Velocidade</h3></label>
-                    <article><input type="text" id="peso" placeholder="Insira o nível da velocidade"></article>
-                <label for = "altura" id="label"><h3>Habilidade</h3></label>    
-                    <article><input type="text" id="altura" placeholder="Insira o nível da habilidade"></article>
-                <label for = "alimentacao" id="label"><h3>Equipamento</h3></label>        
-                    <article><input type="text" id="alimentacao" placeholder="Insira o nível de equipamento"></article>
-                <label for = "alimentacao" id="label"><h3>Inteligência</h3></label>        
-                    <article><input type="text" id="alimentacao" placeholder="Insira o nível de inteligência"></article>
-                <label for = "alimentacao" id="label"><h3>Poder</h3></label>        
-                    <article><input type="text" id="alimentacao" placeholder="Insira o nível do poder"></article>
-            
+                <label for="nome" id="label">
+                    <h3>Nome</h3>
+                </label>
+                <article><input type="text" id="nome" placeholder="Insira o nome"></article>
+                <label for="especie" id="label">
+                    <h3>Força</h3>
+                </label>
+                <article><input type="text" id="especie" placeholder="Insira o nível de força"></article>
+                <label for="peso" id="label">
+                    <h3>Velocidade</h3>
+                </label>
+                <article><input type="text" id="peso" placeholder="Insira o nível da velocidade"></article>
+                <label for="altura" id="label">
+                    <h3>Habilidade</h3>
+                </label>
+                <article><input type="text" id="altura" placeholder="Insira o nível da habilidade"></article>
+                <label for="alimentacao" id="label">
+                    <h3>Equipamento</h3>
+                </label>
+                <article><input type="text" id="alimentacao" placeholder="Insira o nível de equipamento"></article>
+                <label for="alimentacao" id="label">
+                    <h3>Inteligência</h3>
+                </label>
+                <article><input type="text" id="alimentacao" placeholder="Insira o nível de inteligência"></article>
+                <label for="alimentacao" id="label">
+                    <h3>Poder</h3>
+                </label>
+                <article><input type="text" id="alimentacao" placeholder="Insira o nível do poder"></article>
+
                 <button type="submit" id="nav">Enviar</button>
             </form>
         </section>
     </main>
 
-<script src="/js/cadastro.js"></script>    
+    <script src="/js/cadastro.js"></script>
 </body>
+
 </html>

@@ -17,14 +17,13 @@ app.get("/index", (req, res) => {
     res.render("index", { titulo: titulo });
 });
 
-app.get("/lista", (req, res) => {
+app.get("/catalogo", (req, res) => {
     const titulo = "CATÁLOGO";
-    res.render("lista", { titulo: titulo });
+    res.render("catalogo", { titulo: titulo });
 });
 
-app.post("/lista", (req, res) => {
-
-    res.render("lista");
+app.post("/catalogo", (req, res) => {
+    res.render("catalogo");
 });
 
 app.get("/cadastro", (req, res) => {
@@ -32,9 +31,9 @@ app.get("/cadastro", (req, res) => {
     res.render("cadastro", { titulo: titulo });
 });
 
-app.get("/details", (req, res) => {
+app.get("/detalhes", (req, res) => {
     titulo = "DETALHES";
-    res.render("details", { titulo: titulo });
+    res.render("detalhes", { titulo: titulo });
 });
 
 //liga o servidor na porta 3000
