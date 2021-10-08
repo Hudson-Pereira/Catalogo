@@ -17,14 +17,14 @@ app.get("/index", (req, res) => {
     res.render("index", {titulo: titulo} );
 });
 
-app.get("/lista", (req, res) => {
+app.get("/catalogo", (req, res) => {
     const titulo = "CATÁLOGO";
-    res.render("lista", {titulo: titulo});
+    res.render("catalogo", {titulo: titulo});
 });
 
-app.post("/lista", (req, res) => {
+app.post("/catalogo", (req, res) => {
     
-    res.render("lista");
+    res.render("catalogo");
 });
 
 app.get("/cadastro", (req, res) => {

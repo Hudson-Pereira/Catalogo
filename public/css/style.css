@@ -1,7 +1,31 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #40E0D0;
+    background-color: rgb(18, 188, 240);
+}
+
+body#inicio{
+    background: url("/img/inicio.jpg"); 
+    background-size: 100%;
+    color: white;
+}
+
+body#lista{
+    background: url("/img/aranha.jpg"); 
+    background-size: 100%;
+    color: white;
+}
+
+body#new{
+    background: url("/img/homem-ferro.jpg"); 
+    background-size: 100%;
+    color: white;
+}
+
+body#details{
+    background: url("/img/superman-.jpg"); 
+    background-size: 100%;
+    color: white;
 }
 
 a{
@@ -19,15 +43,23 @@ nav{
 }
 
 /* cadastro */
+header {
+    display: flex;    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 h3{
     display: flex;
     justify-content: center;
 }
 
-#nome, #especie, #peso, #altura, #alimentacao{
+#nome, #forca, #vel, #hab, #equip, #int, #poder{
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    width: 200px;
+    height: 30px;
 }
 
 #dados{
