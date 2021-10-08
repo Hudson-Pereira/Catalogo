@@ -8,6 +8,16 @@ app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
 app.use(express.urlencoded({ extended: true }));
 
+const heroi = [{
+    Nome: 'Homem de Ferro',
+    Força: 5,
+    Velocidade: 5,
+    Habilidade: 5,
+    Equipamento: 10,
+    Inteligência: 10,
+    Poder: 1
+}]
+
 app.get("/", (req, res) => {
     res.redirect("/index");
 });
@@ -24,7 +34,7 @@ app.get("/catalogo", (req, res) => {
 
 app.post("/catalogo", (req, res) => {
     const { nome, força, velocidade, habilidade, equipamento, inteligencia, poder } = req.body
-    const novo = {
+    const novoHeroi = {
         Nome: nome,
         Força: força,
         Velocidade: velocidade,
@@ -33,6 +43,8 @@ app.post("/catalogo", (req, res) => {
         Inteligência: inteligencia,
         Poder: poder
     }
+    heroi.push(novoHeroi);
+    message = `${novoHeroi.Nome} cadastrado com sucesso!`
     res.render("catalogo");
 });
 
@@ -41,7 +53,9 @@ app.get("/cadastro", (req, res) => {
     res.render("cadastro", { titulo: titulo });
 });
 
-app.get("/detalhes", (req, res) => {
+app.get("/detalhes/:id", (req, res) => {
+    const id = req.params.id
+    const heroi = heroi[id]
     titulo = "DETALHES";
     res.render("detalhes", { titulo: titulo });
 });
