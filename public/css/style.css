@@ -62,27 +62,27 @@ h3{
 }
 
 #labelF, #forca{
-    margin-left: 80px;
+    margin-left: 7%;
 }
 
 #labelV, #vel{
-    margin-left: 160px;
+    margin-left: 13%;
 }
 
 #labelH, #hab{
-    margin-left: 240px;
+    margin-left: 19%;
 }
 
 #labelE, #equip{
-    margin-left: 320px;
+    margin-left: 25%;
 }
 
 #labelI, #int{
-    margin-left: 400px;
+    margin-left: 31%;
 }
 
 #labelP, #poder{
-    margin-left: 480px;
+    margin-left: 37%;
 }
 
 #dados{
@@ -94,6 +94,7 @@ h3{
     display: flex;
     background-color: white;
     border-radius: 20px;
-    margin: 15px;
+    margin-left: 44%;
+    margin-top: 15px;
     width: 50px;
 }
