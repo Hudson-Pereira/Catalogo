@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title><%= titulo %></title>
+    <title>
+        <%= titulo %>
+    </title>
 </head>
+
 <body id="lista">
     <nav id="L">
         <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
@@ -14,29 +18,55 @@
         <!-- tirar botao de detalhes -->
     </nav>
     <header>
-        <h1><%= titulo %></h1>
+        <h1>
+            <%= titulo %>
+        </h1>
     </header>
     <main>
         <section id="dados">
-        <% herois.forEach(item => { %>
-            <article id="dado">
-                <a href="detalhes/<%= herois.indexOf(item) %>">
-                <img id="herois" src="<%= item.img %>" alt="<%= item.nome %>"></a>
+            <% herois.forEach((item, id)=> { %>
+                <article id="dado">
+                    <a href="/detalhes/<%=id%>">
+                        <img id="herois" src=<%=item.img %> alt="<%= item.nome %>"></a>
                     <ul>
-                        <li>Nome: <p><%= item.nome %></p></li>
-                        <li>Força: <p><%= item.forca %></p></li>
-                        <li>Velocidade: <p><%= item.vel %></p></li>
-                        <li>Habilidade: <p><%= item.hab %></p></li>
-                        <li>Equipamento: <p><%= item.equip %></p></li>
-                        <li>Inteligência: <p><%= item.int %></p></li>
-                        <li>Poder: <p><%= item.poder %></p></li>
+                        <li>Nome: <p>
+                                <%=item.nome %>
+                            </p>
+                        </li>
+                        <li>Força: <p>
+                                <%=item.forca %>
+                            </p>
+                        </li>
+                        <li>Velocidade: <p>
+                                <%=item.vel %>
+                            </p>
+                        </li>
+                        <li>Habilidade: <p>
+                                <%=item.hab %>
+                            </p>
+                        </li>
+                        <li>Equipamento: <p>
+                                <%=item.equip %>
+                            </p>
+                        </li>
+                        <li>Inteligência: <p>
+                                <%=item.int %>
+                            </p>
+                        </li>
+                        <li>Poder: <p>
+                                <%=item.poder %>
+                            </p>
+                        </li>
+
                     </ul>
-            </article>
-        <% }) %>
+                    <% }) %>
+                </article>
+
         </section>
-       
+
     </main>
 
-<script src="js/lista.js"></script>
+    <script src="js/lista.js"></script>
 </body>
+
 </html>

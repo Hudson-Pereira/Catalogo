@@ -25,10 +25,22 @@ app.get("/index", (req, res) => {
     res.render("index", { titulo: titulo });
 });
 
+app.get("/detalhes/:id", (req, res) => {
+    titulo = "DETALHES";
+    const id = req.params.id
+    const heroi = herois[id]
+    res.render("detalhes", { titulo: titulo, heroi });
+});
+
 app.get("/catalogo", (req, res) => {
     const titulo = "CATÁLOGO";
 
     res.render("catalogo", { titulo: titulo, herois });
+});
+
+app.get("/cadastro", (req, res) => {
+    titulo = "CADASTRO";
+    res.render("cadastro", { titulo: titulo });
 });
 
 app.post("/catalogo", (req, res) => {
@@ -45,18 +57,10 @@ app.post("/catalogo", (req, res) => {
     herois.push(novoHeroi);
     //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
     const titulo = "CATÁLOGO";
-    res.render("catalogo", { titulo: titulo, herois: herois });
+    res.render("catalogo", { titulo: titulo, herois });
 });
 
-app.get("/cadastro", (req, res) => {
-    titulo = "CADASTRO";
-    res.render("cadastro", { titulo: titulo });
-});
 
-app.get("/detalhes/:id", (req, res) => {
-    titulo = "DETALHES";
-    res.render("detalhes", { titulo: titulo, heroi: herois[req.params.id] });
-});
 
 //liga o servidor na porta 3000
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
