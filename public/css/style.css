@@ -122,3 +122,18 @@ h3{
     margin-top: 15px;
     width: 50px;
 }
+
+/* catalogo */
+#dados{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 2px black;
+}
+
+#herois{
+    display: flex;
+    width: 40%;
+    height: 40%;
+}

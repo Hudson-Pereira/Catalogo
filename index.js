@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // variaveis
 
-let herois = [{nome: "Superman", forca: 10, vel: 10, hab: 8, equip: 2, int: 7, poder: 10}];
+let herois = [{img: "./img/sm.jpg", nome: "Superman", forca: 10, vel: 10, hab: 8, equip: 2, int: 7, poder: 10}];
 
 app.get("/", (req, res) => {
     res.redirect("/index");
