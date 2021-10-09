@@ -13,24 +13,31 @@
 
 <body id="details">
     <nav id="D">
-        <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
-        <a href="./cadastro"><input type="button" value="CADASTRO" id="nav"></button></a>
-        <a href="./catalogo"><input type="button" value="LISTA" id="nav"></button></a>
+        <a href="/index"><input type="button" value="HOME" id="nav"></button></a>
+        <a href="/cadastro"><input type="button" value="CADASTRO" id="nav"></button></a>
+        <a href="/catalogo"><input type="button" value="LISTA" id="nav"></button></a>
     </nav>
-    </nav>
+   
     <header>
         <h1>
             <%= titulo %>
         </h1>
-        <section>
-            <br>Nome: <%=novoHeroi.Nome%>
-                <br>Força: <%=novoHeroi.Força%>
-                    <br>Velocidade: <%=novoHeroi.Velocidade%>
-                        <br>Habilidade: <%=novoHeroi.Habilidade%>
-                            <br>Equipamento: <%=novoHeroi.Equipamento%>
-                                <br>Inteligência: <%=novoHeroi.Inteligência%>
-                                    <br>Poder: <%=novoHeroi.Poder%>
-        </section>
+        
+            <section id="dado">
+                <% for (let i=0;i<=0;i++){ %>
+                    <img id="herois" src="<%= heroi.img %>" alt="<%= heroi.nome %>">
+                        <ul>
+                            <li>Nome: <p><%= heroi.nome %></p></li>
+                            <li>Força: <p><%= heroi.forca %></p></li>
+                            <li>Velocidade: <p><%= heroi.vel %></p></li>
+                            <li>Habilidade: <p><%= heroi.hab %></p></li>
+                            <li>Equipamento: <p><%= heroi.equip %></p></li>
+                            <li>Inteligência: <p><%= heroi.int %></p></li>
+                            <li>Poder: <p><%= heroi.poder %></p></li>
+                        </ul>
+                    <% }; %>
+            </section>
+        
     </header>
     <main>
         

@@ -19,19 +19,22 @@
     <main>
         <section id="dados">
         <% herois.forEach(item => { %>
-            <a href="mudar/<%= herois.indexOf(item) %>">
-            <img id="herois" src="<%= item.img %>" alt="<%= item.nome %>"></a>
-            <ul>
-                <li>Nome: <%= item.nome %></li>
-                <li>Força: <%= item.forca %></li>
-                <li>Velocidade: <%= item.vel %></li>
-                <li>Habilidade: <%= item.hab %></li>
-                <li>Equipamento: <%= item.equip %></li>
-                <li>Inteligência: <%= item.int %></li>
-                <li>Poder: <%= item.poder %></li>
-            </ul>
+            <article id="dado">
+                <a href="detalhes/<%= herois.indexOf(item) %>">
+                <img id="herois" src="<%= item.img %>" alt="<%= item.nome %>"></a>
+                    <ul>
+                        <li>Nome: <p><%= item.nome %></p></li>
+                        <li>Força: <p><%= item.forca %></p></li>
+                        <li>Velocidade: <p><%= item.vel %></p></li>
+                        <li>Habilidade: <p><%= item.hab %></p></li>
+                        <li>Equipamento: <p><%= item.equip %></p></li>
+                        <li>Inteligência: <p><%= item.int %></p></li>
+                        <li>Poder: <p><%= item.poder %></p></li>
+                    </ul>
+            </article>
         <% }) %>
         </section>
+       
     </main>
 
 <script src="js/lista.js"></script>
