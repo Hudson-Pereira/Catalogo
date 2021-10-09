@@ -17,23 +17,21 @@
         <a href="./cadastro"><input type="button" value="CADASTRO" id="nav"></button></a>
         <a href="./catalogo"><input type="button" value="LISTA" id="nav"></button></a>
     </nav>
-    </nav>
     <header>
         <h1>
             <%= titulo %>
         </h1>
-        <section>
-            <br>Nome: <%=novoHeroi.Nome%>
-                <br>Força: <%=novoHeroi.Força%>
-                    <br>Velocidade: <%=novoHeroi.Velocidade%>
-                        <br>Habilidade: <%=novoHeroi.Habilidade%>
-                            <br>Equipamento: <%=novoHeroi.Equipamento%>
-                                <br>Inteligência: <%=novoHeroi.Inteligência%>
-                                    <br>Poder: <%=novoHeroi.Poder%>
-        </section>
     </header>
     <main>
-        
+        <section>
+            <br>Nome: <%= novoHeroi.nome %>
+                <br>Força: <%=novoHeroi.forca%>
+                    <br>Velocidade: <%=novoHeroi.vel%>
+                        <br>Habilidade: <%=novoHeroi.hab%>
+                            <br>Equipamento: <%=novoHeroi.equip%>
+                                <br>Inteligência: <%=novoHeroi.int%>
+                                    <br>Poder: <%=novoHeroi.poder%>
+        </section>
     </main>
 </body>
 

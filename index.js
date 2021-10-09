@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // variaveis
 
-let herois = [{img: "./img/sm.jpg", nome: "Superman", forca: 10, vel: 10, hab: 8, equip: 2, int: 7, poder: 10}];
+let herois = [{ img: "./img/sm.jpg", nome: "Superman", forca: 10, vel: 10, hab: 8, equip: 2, int: 7, poder: 10 }];
 
 app.get("/", (req, res) => {
     res.redirect("/index");
@@ -24,7 +24,7 @@ app.get("/index", (req, res) => {
 app.get("/catalogo", (req, res) => {
     const titulo = "CATÁLOGO";
 
-    res.render("catalogo", {titulo: titulo, herois: herois});
+    res.render("catalogo", { titulo: titulo, herois });
 });
 
 app.post("/catalogo", (req, res) => {
@@ -41,7 +41,7 @@ app.post("/catalogo", (req, res) => {
     herois.push(novoHeroi);
     //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
     const titulo = "CATÁLOGO";
-    res.render("catalogo", { titulo: titulo, herois: herois }); 
+    res.render("catalogo", { titulo: titulo, herois: herois });
 });
 
 app.get("/cadastro", (req, res) => {
