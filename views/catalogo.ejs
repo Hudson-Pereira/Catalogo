@@ -17,10 +17,10 @@
         <h1><%= titulo %></h1>
     </header>
     <main>
-        <section id="dados">
+        <section id="heroi">
         <% herois.forEach(item => { %>
-            <a href="mudar/<%= herois.indexOf(item) %>">
-            <img id="herois" src="<%= item.img %>" alt="<%= item.nome %>"></a>
+            <!-- <a href="mudar/<%= herois.indexOf(item) %>"></a> -->
+            <img id="herois" src="<%= item.img %>" alt="<%= item.nome %>">
             <ul>
                 <li>Nome: <%= item.nome %></li>
                 <li>Força: <%= item.forca %></li>

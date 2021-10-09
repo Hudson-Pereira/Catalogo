@@ -124,7 +124,7 @@ h3{
 }
 
 /* catalogo */
-#dados{
+#heroi{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -134,6 +134,6 @@ h3{
 
 #herois{
     display: flex;
-    width: 40%;
+    width: 20%;
     height: 40%;
 }
