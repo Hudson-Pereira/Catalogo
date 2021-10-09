@@ -17,30 +17,48 @@
         <a href="/cadastro"><input type="button" value="CADASTRO" id="nav"></button></a>
         <a href="/catalogo"><input type="button" value="LISTA" id="nav"></button></a>
     </nav>
-   
+
     <header>
         <h1>
             <%= titulo %>
         </h1>
-        
-            <section id="dado">
-                <% for (let i=0;i<=0;i++){ %>
-                    <img id="herois" src="<%= heroi.img %>" alt="<%= heroi.nome %>">
-                        <ul>
-                            <li>Nome: <p><%= heroi.nome %></p></li>
-                            <li>Força: <p><%= heroi.forca %></p></li>
-                            <li>Velocidade: <p><%= heroi.vel %></p></li>
-                            <li>Habilidade: <p><%= heroi.hab %></p></li>
-                            <li>Equipamento: <p><%= heroi.equip %></p></li>
-                            <li>Inteligência: <p><%= heroi.int %></p></li>
-                            <li>Poder: <p><%= heroi.poder %></p></li>
-                        </ul>
-                    <% }; %>
-            </section>
-        
     </header>
     <main>
-        
+        <section id="dado">
+            <% for (let i=0;i<=0;i++){ %>
+                <img id="herois" src="<%= heroi.img %>" alt="<%= heroi.nome %>">
+                <ul>
+                    <li>Nome: <p>
+                            <%= heroi.nome %>
+                        </p>
+                    </li>
+                    <li>Força: <p>
+                            <%= heroi.forca %>
+                        </p>
+                    </li>
+                    <li>Velocidade: <p>
+                            <%= heroi.vel %>
+                        </p>
+                    </li>
+                    <li>Habilidade: <p>
+                            <%= heroi.hab %>
+                        </p>
+                    </li>
+                    <li>Equipamento: <p>
+                            <%= heroi.equip %>
+                        </p>
+                    </li>
+                    <li>Inteligência: <p>
+                            <%= heroi.int %>
+                        </p>
+                    </li>
+                    <li>Poder: <p>
+                            <%= heroi.poder %>
+                        </p>
+                    </li>
+                </ul>
+                <% }; %>
+        </section>
     </main>
 </body>
 
