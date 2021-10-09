@@ -28,20 +28,20 @@ app.get("/catalogo", (req, res) => {
 });
 
 app.post("/catalogo", (req, res) => {
-    const { nome, forca, velocidade, habilidade, equipamento, inteligencia, poder } = req.body
+    const { nome, forca, vel, hab, equip, int, poder } = req.body
     const novoHeroi = {
-        Nome: nome,
-        "Força": forca,
-        Velocidade: velocidade,
-        Habilidade: habilidade,
-        Equipamento: equipamento,
-        "Inteligência": inteligencia,
-        Poder: poder
+        nome: nome,
+        forca: forca,
+        vel: vel,
+        hab: hab,
+        equip: equip,
+        int: int,
+        poder: poder
     }
     herois.push(novoHeroi);
     //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
     const titulo = "CATÁLOGO";
-    res.render("detalhes", { titulo: titulo }); //precisa renderizar /detalhes pra não dar erro?
+    res.render("catalogo", { titulo: titulo, herois: herois }); 
 });
 
 app.get("/cadastro", (req, res) => {
