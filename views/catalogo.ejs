@@ -8,15 +8,31 @@
     <title><%= titulo %></title>
 </head>
 <body id="lista">
-    <nav>
+    <nav id="L">
         <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
         <a href="./cadastro"><input type="button" value="CADASTRO" id="nav"></button></a>
-        <a href="./detalhes"><input type="button" value="DETALHES" id="nav"></button></a>
         <!-- tirar botao de detalhes -->
     </nav>
     <header>
         <h1><%= titulo %></h1>
     </header>
+    <main>
+        <section id="dados">
+        <% herois.forEach(item => { %>
+            <a href="mudar/<%= herois.indexOf(item) %>">
+            <img id="herois" src="<%= item.img %>" alt="<%= item.nome %>"></a>
+            <ul>
+                <li>Nome: <%= item.nome %></li>
+                <li>Força: <%= item.forca %></li>
+                <li>Velocidade: <%= item.vel %></li>
+                <li>Habilidade: <%= item.hab %></li>
+                <li>Equipamento: <%= item.equip %></li>
+                <li>Inteligência: <%= item.int %></li>
+                <li>Poder: <%= item.poder %></li>
+            </ul>
+        <% }) %>
+        </section>
+    </main>
 
 <script src="js/lista.js"></script>
 </body>

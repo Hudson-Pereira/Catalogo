@@ -12,10 +12,9 @@
 </head>
 
 <body id="new">
-    <nav>
+    <nav id="C">
         <a href="./index"><input type="button" value="HOME" id="nav"></button></a>
         <a href="./catalogo"><input type="button" value="LISTA" id="nav"></button></a>
-        <a href="./detalhes"><input type="button" value="DETALHES" id="nav"></button></a>
         <!-- tirar botao de detalhes -->
     </nav>
     <header>
@@ -24,42 +23,24 @@
         </h1>
     </header>
     <main>
-        <section id="form">
-            <form id="dados" action="./catalogo" method="POST">
-                <label for="nome" id="label">
-                    <h3>Nome</h3>
-                </label>
-                <article><input type="text" id="nome" placeholder="Insira o nome"></article>
-                <label for="forca" id="label">
-                    <h3>Força</h3>
-                </label>
-                <article><input type="number" id="forca" placeholder="Insira o nível de força" min=0 max=10></article>
-                <label for="vel" id="label">
-                    <h3>Velocidade</h3>
-                </label>
-                <article><input type="number" id="vel" placeholder="Insira o nível da velocidade" min=0 max=10>
-                </article>
-                <label for="hab" id="label">
-                    <h3>Habilidade</h3>
-                </label>
-                <article><input type="number" id="hab" placeholder="Insira o nível da habilidade" min=0 max=10>
-                </article>
-                <label for="equip" id="label">
-                    <h3>Equipamento</h3>
-                </label>
-                <article><input type="number" id="equip" placeholder="Insira o nível de equipamento" min=0 max=10>
-                </article>
-                <label for="int" id="label">
-                    <h3>Inteligência</h3>
-                </label>
-                <article><input type="number" id="int" placeholder="Insira o nível de inteligência" min=0 max=10>
-                </article>
-                <label for="poder" id="label">
-                    <h3>Poder</h3>
-                </label>
-                <article><input type="number" id="poder" placeholder="Insira o nível do poder" min=0 max=10></article>
-
-                <button type="submit" id="nav">Enviar</button>
+        <section id = "form">
+            <form id="dados" action="./detalhes" method="POST">
+                <label for = "nome" id="labelN"><h3>Nome</h3></label>
+                    <article><input type="text" id="nome" placeholder="Insira o nome"></article>
+                <label for = "forca" id="labelF"><h3>Força</h3></label>
+                    <article><input type="number" id="forca" placeholder="Insira o nível de força" min=0 max=10></article>
+                <label for = "vel" id="labelV"><h3>Velocidade</h3></label>
+                    <article><input type="number" id="vel" placeholder="Insira o nível da velocidade" min=0 max=10></article>
+                <label for = "hab" id="labelH"><h3>Habilidade</h3></label>    
+                    <article><input type="number" id="hab" placeholder="Insira o nível da habilidade" min=0 max=10></article>
+                <label for = "equip" id="labelE"><h3>Equipamento</h3></label>        
+                    <article><input type="number" id="equip" placeholder="Insira o nível de equipamento" min=0 max=10></article>
+                <label for = "int" id="labelI"><h3>Inteligência</h3></label>        
+                    <article><input type="number" id="int" placeholder="Insira o nível de inteligência" min=0 max=10></article>
+                <label for = "poder" id="labelP"><h3>Poder</h3></label>        
+                    <article><input type="number" id="poder" placeholder="Insira o nível do poder" min=0 max=10></article>
+            
+                <button type="submit" id="nav2">Enviar</button>
             </form>
             <h4>Lembre-se, as informações de níveis devem ser entre 1 e 10.</h4>
         </section>

@@ -5,7 +5,8 @@ body{
 }
 
 body#inicio{
-    background: url("/img/inicio.jpg"); 
+    background: url("/img/bannermarvel.jpg"); 
+    background-repeat: no-repeat;
     background-size: 100%;
     color: white;
 }
@@ -17,7 +18,7 @@ body#lista{
 }
 
 body#new{
-    background: url("/img/homem-ferro.jpg"); 
+    background: url("/img/hulk.jpg"); 
     background-size: 100%;
     color: white;
 }
@@ -33,6 +34,22 @@ a{
 }
 nav{
     display: flex;
+    background-color: rgb(63, 85, 133);
+}
+
+nav#L{
+    display: flex;
+    background-color: rgb(105, 31, 22);
+}
+
+nav#C{
+    display: flex;
+    background-color: rgb(61, 81, 20);
+}
+
+nav#D{
+    display: flex;
+    background-color: rgb(1, 8, 18);
 }
 
 #nav{
@@ -40,6 +57,13 @@ nav{
     background-color: white;
     border-radius: 20px;
     margin: 15px;
+}
+/* inicio */
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
 /* cadastro */
@@ -51,20 +75,65 @@ header {
 
 h3{
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 #nome, #forca, #vel, #hab, #equip, #int, #poder{
     display: flex;
-    justify-content: center;
     border-radius: 10px;
     width: 200px;
     height: 30px;
 }
 
+#labelF, #forca{
+    margin-left: 7%;
+}
+
+#labelV, #vel{
+    margin-left: 13%;
+}
+
+#labelH, #hab{
+    margin-left: 19%;
+}
+
+#labelE, #equip{
+    margin-left: 25%;
+}
+
+#labelI, #int{
+    margin-left: 31%;
+}
+
+#labelP, #poder{
+    margin-left: 37%;
+}
+
 #dados{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;   
+}
+
+#nav2{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 44%;
+    margin-top: 15px;
+    width: 50px;
+}
+
+/* catalogo */
+#dados{
+    display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 2px black;
+}
+
+#herois{
+    display: flex;
+    width: 40%;
+    height: 40%;
 }
