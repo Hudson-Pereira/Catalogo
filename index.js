@@ -32,8 +32,9 @@ app.get("/catalogo", (req, res) => {
 });
 
 app.post("/catalogo", (req, res) => {
-    const { nome, forca, vel, hab, equip, int, poder } = req.body
+    const { image, nome, forca, vel, hab, equip, int, poder } = req.body;
     const novoHeroi = {
+        img: image,
         nome: nome,
         forca: forca,
         vel: vel,
@@ -41,7 +42,7 @@ app.post("/catalogo", (req, res) => {
         equip: equip,
         int: int,
         poder: poder
-    }
+    };
     herois.push(novoHeroi);
     //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
     const titulo = "CATÁLOGO";
