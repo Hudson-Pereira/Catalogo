@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>
         <%= titulo %>
     </title>
@@ -18,34 +21,52 @@
         <!-- tirar botao de detalhes -->
     </nav>
     <header>
-        <h1>
-            <%= titulo %>
-        </h1>
+            <article id="tit"> <%= titulo %> </article>
     </header>
     <main>
-        <section id = "form">
+        <section id="form">
             <form id="dadosC" action="/catalogo" method="POST">
-                <label for = "image" id="labelIm"><h3>Imagem</h3></label>
-                    <article><input type="text" id="image" name="image" placeholder="Url da imagem"></article>
-                <label for = "nome" id="labelN"><h3>Nome</h3></label>
-                    <article><input type="text" id="nome" name="nome" placeholder="Insira o nome"></article>
-                <label for = "forca" id="labelF"><h3>Força</h3></label>
-                    <article><input type="number" id="forca" name="forca" placeholder="Insira o nível de força" min=0 max=10></article>
-                <label for = "vel" id="labelV"><h3>Velocidade</h3></label>
-                    <article><input type="number" id="vel" name="vel" placeholder="Insira o nível da velocidade" min=0 max=10></article>
-                <label for = "hab" id="labelH"><h3>Habilidade</h3></label>    
-                    <article><input type="number" id="hab" name="hab" placeholder="Insira o nível da habilidade" min=0 max=10></article>
-                <label for = "equip" id="labelE"><h3>Equipamento</h3></label>        
-                    <article><input type="number" id="equip" name="equip" placeholder="Insira o nível de equipamento" min=0 max=10></article>
-                <label for = "int" id="labelI"><h3>Inteligência</h3></label>        
-                    <article><input type="number" id="int" name="int" placeholder="Insira o nível de inteligência" min=0 max=10></article>
-                <label for = "poder" id="labelP"><h3>Poder</h3></label>        
-                    <article><input type="number" id="poder" name="poder" placeholder="Insira o nível do poder" min=0 max=10></article>
-            
+                <section id="form1">
+                    <article>
+                        <label for = "image" id="labelIm">Imagem</label>
+                        <input type="text" id="image" name="image" placeholder="Url da imagem">
+                    </article>
+                    <article>
+                        <label for = "nome" id="labelN">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Insira o nome">
+                    </article>
+                    <article>
+                        <label for = "forca" id="labelF">Força</label>
+                        <input type="number" id="forca" name="forca" placeholder="Insira o nível de força" min=0 max=10>
+                    </article>
+                    <article>
+                        <label for = "vel" id="labelV">Velocidade</label>
+                        <input type="number" id="vel" name="vel" placeholder="Insira o nível da velocidade" min=0 max=10>
+                    </article>
+                </section>
+                <section id="form2">    
+                    <article>
+                        <label for = "hab" id="labelH">Habilidade</label>
+                        <input type="number" id="hab" name="hab" placeholder="Insira o nível da habilidade" min=0 max=10>
+                    </article>
+                    <article>
+                        <label for = "equip" id="labelE">Equipamento</label>
+                        <input type="number" id="equip" name="equip" placeholder="Insira o nível de equipamento" min=0 max=10>
+                    </article>
+                <article>
+                    <label for = "int" id="labelI">Inteligência</label>
+                    <input type="number" id="int" name="int" placeholder="Insira o nível de inteligência" min=0 max=10>
+                </article>        
+                <article>
+                    <label for = "poder" id="labelP">Poder</label>
+                    <input type="number" id="poder" name="poder" placeholder="Insira o nível do poder" min=0 max=10>
+                </article>
+                </section>
+                
                 <button type="submit" id="nav2">Enviar</button>
             </form>
-            <h4>Lembre-se, as informações de níveis devem ser entre 1 e 10.</h4>
         </section>
+        <h4>Lembre-se, as informações de níveis devem ser entre 1 e 10.</h4>
     </main>
 
     <script src="/js/cadastro.js"></script>

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>
         <%= titulo %>
     </title>
@@ -18,50 +21,21 @@
         <!-- tirar botao de detalhes -->
     </nav>
     <header>
-        <h1>
+        <article id="tit">
             <%= titulo %>
-        </h1>
+        <article>
     </header>
     <main>
-        <section id="dados">
+        <section id="dado">
             <% herois.forEach((item, id)=> { %>
-                <article id="dado">
                     <a href="/detalhes/<%=id%>">
                         <img id="herois" src=<%=item.img %> alt="<%= item.nome %>"></a>
                     <ul>
                         <li>Nome: <p>
                                 <%=item.nome %>
                             </p>
-                        </li>
-                        <li>Força: <p>
-                                <%=item.forca %>
-                            </p>
-                        </li>
-                        <li>Velocidade: <p>
-                                <%=item.vel %>
-                            </p>
-                        </li>
-                        <li>Habilidade: <p>
-                                <%=item.hab %>
-                            </p>
-                        </li>
-                        <li>Equipamento: <p>
-                                <%=item.equip %>
-                            </p>
-                        </li>
-                        <li>Inteligência: <p>
-                                <%=item.int %>
-                            </p>
-                        </li>
-                        <li>Poder: <p>
-                                <%=item.poder %>
-                            </p>
-                        </li>
-
-                    </ul>
+                        </ul>
                     <% }) %>
-                </article>
-
         </section>
 
     </main>
