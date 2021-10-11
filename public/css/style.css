@@ -210,10 +210,11 @@ span{
 
 span#logo{
     display: flex;
-    justify-content: start;
-    position: relative;
-    right: 31%;
-    /* height: 1%; //colocar tamanho na imagem do span logo */
+    justify-content: center;
+    z-index: 1;
+    left: 1%;
+    bottom: 25%;
+    height: 35%;
 }
 
 ul{

@@ -56,10 +56,11 @@ app.post("/catalogo", (req, res) => {
         poder: poder,
         icon: icon
     };
+    
     herois.push(novoHeroi);
     //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
     const titulo = "CATÁLOGO";
-    res.render("catalogo", { titulo: titulo, herois });
+    res.render("catalogo", { titulo: titulo, herois: herois, logo: logo });
 });
 
 
