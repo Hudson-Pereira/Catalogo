@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>
         <%= titulo %>
     </title>
@@ -27,38 +30,40 @@
         <section id="dado">
             <img id="herois" src="<%=heroi.img%>" alt="<%= heroi.nome %>">
             <ul>
-                <li>Nome: <p>
+                <li>Nome: <article>
                         <%= heroi.nome %>
-                    </p>
+                    </article>
                 </li>
-                <li>Força: <p>
+                <li>Força: <article>
                         <%= heroi.forca %>
-                    </p>
+                    </article>
                 </li>
-                <li>Velocidade: <p>
+                <li>Velocidade: <article>
                         <%= heroi.vel %>
-                    </p>
+                    </article>
                 </li>
-                <li>Habilidade: <p>
+                <li>Habilidade: <article>
                         <%= heroi.hab %>
-                    </p>
+                    </article>
                 </li>
-                <li>Equipamento: <p>
+                <li>Equipamento: <article>
                         <%= heroi.equip %>
-                    </p>
+                    </article>
                 </li>
-                <li>Inteligência: <p>
+                <li>Inteligência: <article>
                         <%= heroi.int %>
-                    </p>
+                    </article>
                 </li>
-                <li>Poder: <p>
+                <li>Poder: <article>
                         <%= heroi.poder %>
-                    </p>
+                    </article>
                 </li>
             </ul>
         </section>
-        <button>Atualizar</button>
-        <button>Apagar</button>
+        <nav id="acoes">
+        <button type="submit" id="navAt">Atualizar</button>
+        <button type="submit" id="navExc">Apagar</button>
+        </nav>
     </main>
 </body>
 

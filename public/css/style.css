@@ -25,6 +25,7 @@ nav{
     background-color: white;
     border-radius: 20px;
     margin: 15px;
+    cursor: pointer;
 }
 
 #tit{
@@ -61,10 +62,18 @@ article{
     width: 50%;
 }
 
-#image, #nome, #forca, #vel, #hab, #equip, #int, #poder{
+#image, #nome, #icon{
     display: flex;
     border-radius: 10px;
     width: 65%;
+    height: 30px;
+    border: solid black 3px;
+}
+
+#forca, #vel, #hab, #equip, #int, #poder{
+    display: flex;
+    border-radius: 10px;
+    width: 40%;
     height: 30px;
     border: solid black 3px;
 }
@@ -73,7 +82,7 @@ article{
     margin-left: 1%;
 }
 
-#labelN, #nome{
+#labelH, #hab{
     margin-left: 12%;
 }
 
@@ -85,20 +94,24 @@ article{
     margin-left: 34%;
 }
 
-#labelH, #hab{
+#labelN, #nome{
     margin-left: 34%;
 }
 
 #labelE, #equip{
-    margin-left: 23%;
+    margin-left: 45%;
 }
 
 #labelI, #int{
-    margin-left: 12%;
+    margin-left: 32%;
 }
 
 #labelP, #poder{
-    margin-left: 1%;
+    margin-left: 20%;
+}
+
+#labelIc, #icon{
+    margin-left: 70%;
 }
 
 #dadosC{
@@ -117,6 +130,7 @@ article{
     border-radius: 20px;
     margin-top: 15px;
     width: 90px;
+    cursor: pointer;
 }
 
 /* catalogo */
@@ -128,7 +142,45 @@ article{
     align-items: center;
     width: 100%;
     height: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
 }
+
+#pers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    border: solid 2px white;
+    background-color: rgb(23, 47, 99);
+    margin: 2px;
+    padding: 10px;
+}
+
+#persN{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    border: solid 2px white;
+    background-color: rgb(23, 47, 99);
+    margin: 2px;
+    padding: 10px;
+}
+
 
 #dados{
     display: flex;
@@ -143,6 +195,25 @@ article{
     display: flex;
     width: 500px;
     height: 350px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    position: relative;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 31%;
+    height: 10%;
+}
+
+span#logo{
+    display: flex;
+    justify-content: start;
+    position: relative;
+    right: 31%;
+    /* height: 1%; //colocar tamanho na imagem do span logo */
 }
 
 ul{
@@ -154,7 +225,7 @@ li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 p{
@@ -164,3 +235,28 @@ p{
 }
 
 /* detalhes */
+#acoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navAt{
+    background-color: yellow;
+    border-radius: 20px;
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#navExc{
+    background-color: red;
+    border-radius: 20px;
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    margin: 15px;
+    cursor: pointer;
+}
