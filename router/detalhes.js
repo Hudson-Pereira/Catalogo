@@ -11,8 +11,9 @@ router.get("/:id", (req, res) => {
     titulo = "DETALHES";
     const id = req.params.id
     const heroi = herois[id]
-    //res.render("detalhes", { titulo: titulo, heroi });
-    res.json(heroi);
+    res.render("detalhes", { titulo: titulo, heroi });
+    //res.json(heroi);
+    console.log(heroi)
 });
 
 module.exports = router;
