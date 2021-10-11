@@ -29,7 +29,6 @@
         <section id="dado">
             <% herois.forEach(item => { %>
                 <section id="pers">
-                    <span id="logo"><img src="/img/heroes.png"></span>
                     <a href="/detalhes/<%= herois.indexOf(item) %>">
                         <img id="herois" src=<%=item.img %> alt="<%= item.nome %>"></a>
                             <span><img src="<%= item.icon %>"></span>

@@ -206,15 +206,7 @@ span{
     position: absolute;
     right: 31%;
     height: 10%;
-}
-
-span#logo{
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    left: 1%;
-    bottom: 25%;
-    height: 35%;
+    transform: rotate(45deg);
 }
 
 ul{

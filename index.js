@@ -1,7 +1,9 @@
 const express = require("express");//importa modulo express
 const path = require("path"); //importando path
 const app = express();//instancia uma referencia do express no projeto
-const port = process.env.PORT || 3000;// set port usando a var de ambiente ou a porta 3000.
+require('dotenv').config();
+
+const port = process.env.PORT;// set port usando a var de ambiente ou a porta 3000.
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 
@@ -34,13 +36,13 @@ app.get("/detalhes/:id", (req, res) => {
 
 app.get("/catalogo", (req, res) => {
     const titulo = "LISTA";
-
-    res.render("catalogo", { titulo: titulo, herois:herois });
+    res.render("catalogo", { titulo: titulo, herois:herois});
 });
 
 app.get("/cadastro", (req, res) => {
     titulo = "CADASTRO";
-    res.render("cadastro", { titulo: titulo });
+    
+    res.render("cadastro", { titulo: titulo});
 });
 
 app.post("/catalogo", (req, res) => {
@@ -60,7 +62,7 @@ app.post("/catalogo", (req, res) => {
     herois.push(novoHeroi);
     //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
     const titulo = "CATÁLOGO";
-    res.render("catalogo", { titulo: titulo, herois: herois, logo: logo });
+    res.render("catalogo", { titulo: titulo, herois: herois});
 });
 
 
