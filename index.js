@@ -11,7 +11,7 @@ const port = process.env.PORT;// set port usando a var de ambiente ou a porta 30
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 
-app.use(express.static(path.join(__dirname, "/public"))); //set public como raiz
+app.use(express.static(path.join(__dirname, "/views/public"))); //set public como raiz
 
 
 // variaveis
