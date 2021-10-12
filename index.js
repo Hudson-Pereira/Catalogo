@@ -23,10 +23,6 @@ let herois = [{ img: "https://cdn.ome.lt/-rlI9Dfnv9_IH6OEt_9YZTIHZ_g=/970x360/sm
 ];
 
 app.get("/", (req, res) => {
-    res.redirect("/index");
-});
-
-app.get("/index", (req, res) => {
     const titulo = "PÁGINA INICIAL";
     res.render("index", { titulo: titulo });
 });
