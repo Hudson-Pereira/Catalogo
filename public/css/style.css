@@ -178,7 +178,7 @@ article{
     border: solid 2px white;
     background-color: rgb(23, 47, 99);
     margin: 2px;
-    padding: 10px;
+    padding: 5px;
 }
 
 
@@ -198,6 +198,7 @@ article{
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     position: relative;
+    max-width:100%;
 }
 
 span{
