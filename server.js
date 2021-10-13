@@ -12,7 +12,7 @@ const rotas = require("./router")
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 
-app.use(express.static(path.join(__dirname, "/view/public"))); //set public como raiz
+app.use(express.static(path.join(__dirname, "/views"))); //set public como raiz
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.use("/", rotas)
