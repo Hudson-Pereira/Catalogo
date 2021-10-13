@@ -5,7 +5,7 @@ body{
 }
 
 body#inicio{
-    background: url("/img/bannermarvel.jpg"); 
+    background: url("/public/img/bannermarvel.jpg"); 
     background-repeat: no-repeat;
     /* background-size: 100%; */
     color: white;
@@ -119,7 +119,7 @@ article{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;   
-    background-image: url("/img/new.png");
+    background-image: url("/public/img/new.png");
     background-repeat: no-repeat;
 }
 
