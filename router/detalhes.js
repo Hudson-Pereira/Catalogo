@@ -7,7 +7,7 @@ let herois = [{ img: "https://cdn.ome.lt/-rlI9Dfnv9_IH6OEt_9YZTIHZ_g=/970x360/sm
 { img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEuwQGnO6uYyDw27xlvj4aNOOZF1QZodu5sg&usqp=CAU", nome: "IronMan", forca: 8, vel: 7, hab: 9, equip: 10, int: 10, poder: 9 }
 ];
 
-router.get("/:id", (req, res) => {
+router.get("detalhes/:id", (req, res) => {
     titulo = "DETALHES";
     const id = req.params.id
     const heroi = herois[id]
