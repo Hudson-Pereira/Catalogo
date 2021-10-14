@@ -29,12 +29,12 @@
         <section id="dado">
             <% herois.forEach(item => { %>
                 <section id="pers">
-                    <a href="/detalhes/<%= herois.ID %>">
+                    <a href="/detalhes/<%= herois.indexOf(item) %>">
                         <img id="herois" src=<%=item.img %> alt="<%= item.nome %>"></a>
                             <ul>
                                 <article id="persN">
                                     <li>Nome: 
-                                        <a href="/detalhes/<%= herois.ID %>">
+                                        <a href="/detalhes/<%= herois.indexOf(item) %>">
                                         <article>
                                             <%=item.nome %>
                                         </article></a>
