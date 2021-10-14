@@ -28,8 +28,8 @@ router.post("/", (req, res) => {
         poder: poder
     };
     herois.push(novoHeroi);
-    //mensagem = `${novoHeroi.Nome} cadastrado com sucesso!`
-    const titulo = "CATÁLOGO";
+    // menssagem = `${novoHeroi.nome} cadastrado com sucesso!`
+    const titulo = "LISTA";
     res.render("catalogo", { titulo: titulo, herois });
 });
 
