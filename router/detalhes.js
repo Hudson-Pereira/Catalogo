@@ -11,7 +11,7 @@ router.get("detalhes/:id", (req, res) => {
     titulo = "DETALHES";
     const id = req.params.id
     const heroi = herois[id]
-    res.render("detalhes", { titulo: titulo, heroi });
+    res.render("detalhes", { titulo: titulo, heroi, id});
     //res.json(heroi);
     console.log(heroi)
 });
