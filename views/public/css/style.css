@@ -62,7 +62,7 @@ article{
     width: 50%;
 }
 
-#image, #nome, #icon{
+#image, #nome{
     display: flex;
     border-radius: 10px;
     width: 65%;
@@ -151,18 +151,31 @@ article{
         width: 50%;
     }
 
-    #nav2{
+    #forca, #vel, #hab, #equip, #int, #poder{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        border-radius: 20px;
-        margin-top: 20px;
-        width: 120px;
-        height: 40px;
-        cursor: pointer;
+        border-radius: 10px;
+        width: 40%;
+        height: 30px;
+        border: solid black 3px;
+    }
+
+    #image, #nome{
+        display: flex;
+        border-radius: 10px;
+        width: 65%;
+        height: 30px;
+        border: solid black 3px;
     }
     
+    #dadosC{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;   
+        background-image: url("/img/new.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+}
 }
 /* catalogo */
 #dado{
