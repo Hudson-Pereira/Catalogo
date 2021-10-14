@@ -154,7 +154,7 @@ article{
     #forca, #vel, #hab, #equip, #int, #poder{
         display: flex;
         border-radius: 10px;
-        width: 40%;
+        width: 35%;
         height: 30px;
         border: solid black 3px;
     }
@@ -162,11 +162,15 @@ article{
     #image, #nome{
         display: flex;
         border-radius: 10px;
-        width: 65%;
+        width: 35%;
         height: 30px;
         border: solid black 3px;
     }
     
+    #labelN, #nome{
+        margin-left: 50%;
+    }
+
     #dadosC{
         display: flex;
         justify-content: center;
