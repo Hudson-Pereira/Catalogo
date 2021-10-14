@@ -2,7 +2,8 @@ const express = require("express")//importa modulo express
 const path = require("path") //importando path
 const app = express()//instancia uma referencia do express no projeto
 require('dotenv').config()
-const db = require("./config/sequelize");
+//const db = require("./config/sequelize");
+
 const port = process.env.PORT// set port usando a var de ambiente ou a porta 3000.
 const rotas = require("./router")
 
@@ -13,7 +14,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use("/", rotas)
 
+const { sequelize } = require('./model')
+sequelize.sync().then(() => {
+    console.log('Conexão direta com banco de dados OK.')
+})
 
 //liga o servidor na porta 3000
-db.conectado();
+//db.conectado();
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
