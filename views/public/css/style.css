@@ -55,11 +55,11 @@ article{
 }
 
 #form1{
-    width: 50%;
+    width: 47%;
 }
 
 #form2{
-    width: 50%;
+    width: 47%;
 }
 
 #image, #nome, #icon{
@@ -131,6 +131,15 @@ article{
     margin-top: 15px;
     width: 90px;
     cursor: pointer;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    article{
+        margin: 15px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.3rem;
+        color: white;
+    }
 }
 
 /* catalogo */
