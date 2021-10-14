@@ -16,6 +16,8 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
+    
+    const titulo = "LISTA";
     const { image, nome, forca, vel, hab, equip, int, poder} = req.body;
     const novoHeroi = {
         img: image,
@@ -29,7 +31,6 @@ router.post("/", (req, res) => {
     };
     herois.push(novoHeroi);
     // menssagem = `${novoHeroi.nome} cadastrado com sucesso!`
-    const titulo = "LISTA";
     res.render("catalogo", { titulo: titulo, herois });
 });
 

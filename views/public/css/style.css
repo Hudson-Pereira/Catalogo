@@ -55,11 +55,11 @@ article{
 }
 
 #form1{
-    width: 47%;
+    width: 50%;
 }
 
 #form2{
-    width: 47%;
+    width: 50%;
 }
 
 #image, #nome, #icon{
@@ -142,6 +142,28 @@ article{
     }
 }
 
+@media only screen and (min-device-width : 1080px) {
+    #form1{
+        width: 50%;
+    }
+    
+    #form2{
+        width: 50%;
+    }
+
+    #nav2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+}
 /* catalogo */
 #dado{
     display: flex;
