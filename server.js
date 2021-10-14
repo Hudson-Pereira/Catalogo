@@ -2,7 +2,7 @@ const express = require("express")//importa modulo express
 const path = require("path") //importando path
 const app = express()//instancia uma referencia do express no projeto
 require('dotenv').config()
-const db = require("./model/database");
+const db = require("./config/sequelize");
 const port = process.env.PORT// set port usando a var de ambiente ou a porta 3000.
 const rotas = require("./router")
 

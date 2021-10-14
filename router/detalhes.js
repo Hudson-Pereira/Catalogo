@@ -8,11 +8,9 @@ let herois = [{ img: "https://cdn.ome.lt/-rlI9Dfnv9_IH6OEt_9YZTIHZ_g=/970x360/sm
 ];
 
 router.get("/:id", (req, res) => {
-    
+
     const title = herois[req.params.id].name;
-    res.render("detalhes", { titulo: title, heroi: herois[req.params.id]});
-    //res.json(heroi);
-    console.log(heroi)
+    res.render("detalhes", { titulo: title, heroi: herois[req.params.id] });
 });
 
 module.exports = router;
