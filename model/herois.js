@@ -41,5 +41,6 @@ const heroi = (sequelize, DataTypes) => {
             createdAt: false,
             updatedAt: false,
         })
+    return Heroi
 }
 module.exports = heroi

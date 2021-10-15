@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>
-        <%= titulo %>
+        CADASTRO
     </title>
 </head>
 
@@ -18,11 +18,10 @@
     <nav id="C">
         <a href="./"><input type="button" value="HOME" id="nav"></button></a>
         <a href="./catalogo"><input type="button" value="LISTA" id="nav"></button></a>
-        <!-- tirar botao de detalhes -->
     </nav>
     <header>
         <article id="tit">
-            <%= titulo %>
+            CADASTRO
         </article>
     </header>
     <main>
@@ -31,11 +30,12 @@
                 <section id="form1">
                     <article>
                         <label for="image" id="labelIm">Imagem</label>
-                        <input type="url" id="image" name="image" placeholder="Url da imagem" accept=".png, .jpg, .jpeg">
+                        <input type="url" id="image" name="image" placeholder="Url da imagem">
                     </article>
                     <article>
-                        <label for = "hab" id="labelH">Habilidade</label>
-                        <input type="number" id="hab" name="hab" placeholder="Insira o nível da habilidade" min=0 max=10>
+                        <label for="hab" id="labelH">Habilidade</label>
+                        <input type="number" id="hab" name="hab" placeholder="Insira o nível da habilidade" min=0
+                            max=10>
                     </article>
                     <article>
                         <label for="forca" id="labelF">Força</label>
@@ -49,7 +49,7 @@
                 </section>
                 <section id="form2">
                     <article>
-                        <label for = "nome" id="labelN">Nome</label>
+                        <label for="nome" id="labelN">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="Insira o nome">
                     </article>
                     <article>
@@ -68,9 +68,9 @@
                     </article>
                 </section>
                 <section>
-                <button type="submit" id="nav2">Enviar</button>
+                    <button type="submit" id="nav2">Enviar</button>
                 </section>
-        
+
             </form>
         </section>
         <h4>Lembre-se, as informações de níveis devem ser entre 1 e 10.</h4>
