@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
 
     const { nome, forca, vel, hab, equip, int, poder } = req.body
 
-    const novoheroi = await heroi.create({
+    await heroi.create({
         Nome: nome,
         'Força': forca,
         Velocidade: vel,
@@ -25,8 +25,7 @@ router.post("/", async (req, res) => {
         Poder: poder
     })
 
-    res.render("catalogo", novoheroi);
-    console.log(novoheroi);
+    res.redirect("catalogo");
 
 });
 

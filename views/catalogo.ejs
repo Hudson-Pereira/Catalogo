@@ -26,14 +26,14 @@
     </header>
     <main>
         <section id="dado">
-            <% herois.forEach(item=> { %>
+            <% herois.forEach((item, id)=> { %>
                 <section id="pers">
-                    <a href="/detalhes/<%= herois.indexOf(item) %>">
+                    <a href="/detalhes/<%=id%>">
                         <img id="herois" src=<%=item.img %> alt="<%= item.nome %>"></a>
                     <ul>
                         <article id="persN">
                             <li>Nome:
-                                <a href="/detalhes/<%= herois.indexOf(item) %>">
+                                <a href="/detalhes/<%=id%>">
                                     <article>
                                         <%=item.nome %>
                                     </article>
