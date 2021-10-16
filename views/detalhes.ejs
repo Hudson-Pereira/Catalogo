@@ -28,7 +28,7 @@
     </header>
     <main>
         <section id="dado">
-            <img id="herois" src="<%=heroi.Imagem%>" alt="<%= heroi.nome %>">
+            <img id="herois" src="<%=heroi.Imagem%>" alt="<%= heroi.Nome %>">
             <ul>
                 <li>Força: <article>
                         <%= heroi.Força %>
@@ -57,10 +57,11 @@
             </ul>
         </section>
         <nav id="acoes">
-            <button type="submit" id="navAt">Atualizar</button>
+            <button type="submit" id="navAt">Editar</button>
             <button type="submit" id="navExc">Apagar</button>
         </nav>
     </main>
+    <script src="public/js/editar.js"></script>
 </body>
 
 </html>
