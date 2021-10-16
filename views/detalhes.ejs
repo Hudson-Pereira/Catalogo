@@ -57,11 +57,11 @@
             </ul>
         </section>
         <nav id="acoes">
-            <button type="submit" id="navAt">Editar</button>
-            <button type="submit" id="navExc">Apagar</button>
+            <a href="/editar/<%=heroi.id%>"><button id="navAt">Editar</button></a>
+            <a href="/apagar/<%=heroi.id%>"><button id="navExc">Apagar</button></a>
         </nav>
     </main>
-    <script src="public/js/editar.js"></script>
+    <script src="/js/editar.js"></script>
 </body>
 
 </html>

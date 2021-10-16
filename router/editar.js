@@ -4,15 +4,15 @@ const router = express.Router()
 
 const Heroi = require('../model/herois.js')
 
-router.get("/editar/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
 
     const heroi = await Heroi.findByPk(req.params.id)
 
-    res.render("../views/editar", { heroi: heroi })
+    res.render("editar", { heroi: heroi })
 
 })
 
-router.post('/editar/:id', async (req, res) => {
+router.post('/:id', async (req, res) => {
     const heroi = await Heroi.findByPk(req.params.id);
     const { image, nome, forca, vel, hab, equip, int, poder } = req.body;
 
@@ -28,3 +28,5 @@ router.post('/editar/:id', async (req, res) => {
     await heroi.save();
     res.redirect("/catalogo");
 });
+
+module.exports = router
