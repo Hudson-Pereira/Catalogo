@@ -2,20 +2,21 @@ const express = require('express');
 
 const router = express.Router();
 
-const { heroi } = require('../model');
+const Heroi = require('../model/herois.js');
 
 router.get("/", async (req, res) => {
 
-    const herois = await heroi.findAll()
+    const heroi = await Heroi.findAll()
 
-    res.render("catalogo", { herois });
+    res.render("catalogo", { heroi: heroi });
 });
 
 router.post("/", async (req, res) => {
 
-    const { nome, forca, vel, hab, equip, int, poder } = req.body
+    const { image, nome, forca, vel, hab, equip, int, poder } = req.body
 
-    const novoheroi = await heroi.create({
+    await Heroi.create({
+        Imagem: image,
         Nome: nome,
         'Força': forca,
         Velocidade: vel,
@@ -25,8 +26,7 @@ router.post("/", async (req, res) => {
         Poder: poder
     })
 
-    res.render("catalogo", novoheroi);
-    console.log(novoheroi);
+    res.redirect("catalogo");
 
 });
 

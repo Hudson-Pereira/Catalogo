@@ -1,46 +1,50 @@
-const heroi = (sequelize, DataTypes) => {
+const { Sequelize, DataTypes } = require('sequelize')
+const database = require('./database')
 
-    const Heroi = sequelize.define('heroi', {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            autoIncrement: true,
-            primaryKey: true
-        },
-        Nome: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        Força: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        Velocidade: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        Habilidade: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        Equipamento: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        Inteligência: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        Poder: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        }
+const Heroi = database.sequelize.define('heroi', {
+    id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true
     },
-        {
-            timestamps: false,
-            createdAt: false,
-            updatedAt: false,
-        })
-    return Heroi
-}
-module.exports = heroi
+    Imagem: {
+        type: Sequelize.TEXT,
+        allowNull: false
+    },
+    Nome: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    Força: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    Velocidade: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    Habilidade: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    Equipamento: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    Inteligência: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    Poder: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    }
+},
+    {
+        timestamps: false,
+        createdAt: false,
+        updatedAt: false,
+    })
+
+module.exports = Heroi
