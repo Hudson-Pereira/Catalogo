@@ -6,7 +6,7 @@ const Heroi = require('../model/herois.js');
 
 router.get("/", async (req, res) => {
 
-    const heroi = await Heroi.findAll()
+    const heroi = await Heroi.findAll({ order: [['id', 'DESC']] })
 
     res.render("catalogo", { heroi: heroi });
 });
