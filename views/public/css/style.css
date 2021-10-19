@@ -121,7 +121,7 @@ article{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;   
-    background-image: url("/img/new.jpeg");
+    background-image: url("/img/images.jpeg");
     background-repeat: no-repeat;
 }
 
@@ -380,7 +380,6 @@ p{
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;   
-        background-image: url("/img/new.png");
         background-size: 100%;
         background-repeat: no-repeat;
 }
