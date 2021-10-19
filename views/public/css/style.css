@@ -16,7 +16,9 @@ a{
  
 }
 nav{
-    display: flex;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: rgb(23, 47, 99);
 }
 
@@ -44,7 +46,7 @@ h1{
 header {
     display: flex;    
     justify-content: center;
-    flex-wrap: wrap;
+    width:100%;
 }
 
 article{
@@ -240,24 +242,29 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: rgb(63, 85, 133);
 }
 
 #navAt{
+    display: flex;
+    align-items: center;
     background-color: yellow;
     border-radius: 20px;
     margin-top: 15px;
-    width: 90px;
-    height: 40px;
+    width: 110px;
+    height: 60px;
     margin: 15px;
     cursor: pointer;
 }
 
 #navExc{
+    display: flex;
+    align-items: center;
     background-color: red;
     border-radius: 20px;
     margin-top: 15px;
-    width: 90px;
-    height: 40px;
+    width: 110px;
+    height: 60px;
     margin: 15px;
     cursor: pointer;
 }
@@ -268,7 +275,15 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(23, 47, 99);
-    width: 75%;
+    width: 45%;
+    border-radius: 10px;
+}
+
+#imgs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 #imgdetalhe{
@@ -277,109 +292,55 @@ p{
     height: 300px;
     max-width:100%;
     border-radius: 20px;
+    margin: 10px;
+}
+
+#logo{
+    width: 30%;
+    height: 30%;
+    transform: rotate(45deg);
 }
 
 #det1, #det2, #det3, #det4, #det5, #det6{
     display: flex;
     justify-content: space-between;
-    border: solid 1px rgb(23, 47, 99);
+    background-color: rgb(63, 85, 133);
     margin: 3px;
     border-radius: 25px;
     padding-right: 30px;
+    font-size: 25px;
 }
 
 #det1{
     margin-left: 1%;
-    width: 70%;
-}
-
-#det2{
-    margin-left: 11%;
-    width: 60%;
-}
-
-#det3{
-    margin-left: 21%;
-    width: 50%;
-}
-
-#det4{
-    margin-left: 31%;
-    width: 40%;
-}
-
-#det5{
-    margin-left: 41%;
-    width: 30%;
-}
-
-#det6{
-    margin-left: 51%;
-    width: 20%;
-}
-/*-------------------------------------------------------------------------------------*/
-@media only screen and (min-device-width : 625px) and (max-device-width : 730px) {
-    li{
-        font-size: 1.8rem;
-
-    }
-}
-
-@media only screen and (min-device-width : 600px) and (max-device-width : 624px) {
-    li{
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-device-width : 180px) and (max-device-width : 599px) {
-    article{
-        margin: 15px;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 1.3rem;
-        color: white;
-    }
-
-    #tit{
-        font-size: 2rem;
-    }
-
-    li{
-        font-size: 1rem;
-        padding-right: 70px;
-    }
-    
-#det1{
-    margin-left: 1%;
-    width: 85%;
-}
-
-#det2{
-    margin-left: 11%;
     width: 75%;
 }
 
+#det2{
+    margin-left: 11%;
+    width: 65%;
+}
+
 #det3{
     margin-left: 21%;
-    width: 65%;
+    width: 55%;
 }
 
 #det4{
     margin-left: 31%;
-    width: 55%;
+    width: 45%;
 }
 
 #det5{
     margin-left: 41%;
-    width: 45%;
+    width: 35%;
 }
 
 #det6{
     margin-left: 51%;
-    width: 35%;
+    width: 25%;
 }
-}
+/*-------------------------------------------------------------------------------------*/
 
 @media only screen and (min-device-width : 1080px) {
     #form1{
@@ -419,4 +380,102 @@ p{
         background-size: 100%;
         background-repeat: no-repeat;
 }
+}
+
+@media only screen and (min-device-width : 731px) and (max-device-width : 1169px) {
+    li{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+
+    }
+    #detalhe{
+        width: 50%;
+    }
+
+#det1{
+    margin-left: 1%;
+    width: 85%;
+}
+
+#det2{
+    margin-left: 11%;
+    width: 75%;
+}
+
+#det3{
+    margin-left: 21%;
+    width: 65%;
+}
+
+#det4{
+    margin-left: 31%;
+    width: 55%;
+}
+
+#det5{
+    margin-left: 41%;
+    width: 45%;
+}
+
+#det6{
+    margin-left: 51%;
+    width: 35%;
+}
+}
+
+@media only screen and (min-device-width : 625px) and (max-device-width : 730px) {
+    li{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+
+    }
+    #detalhe{
+    width: 80%;
+    }
+}
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 624px) {
+    li{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    #detalhe{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width : 180px) and (max-device-width : 599px) {
+    article{
+        margin: 15px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    #imgdetalhe{
+        margin: 0;
+    }
+
+    #detalhe{
+        width: 80%;
+    }
+
+    #tit{
+        font-size: 2rem;
+    }
+
+    li{
+        font-size: 1rem;
+    }
+    
+    #det1, #det2, #det3, #det4, #det5, #det6{
+        padding-right: 30px;
+        font-size: 15px;
+        margin-left: 0px;
+        width: 60%;
+    }
 }
