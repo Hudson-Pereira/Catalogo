@@ -121,7 +121,7 @@ article{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;   
-    background-image: url("/img/new.png");
+    background-image: url("/img/new.jpeg");
     background-repeat: no-repeat;
 }
 
@@ -160,8 +160,9 @@ article{
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
     color: white;
-    border: solid 2px white;
-    background-color: rgb(23, 47, 99);
+    border: solid 2px black;
+    /* background-color: rgb(23, 47, 99); */
+    background-image: linear-gradient( to top right, rgb(63, 85, 133), rgb(23, 47, 99), rgb(23, 47, 99) , rgb(63, 85, 133)); 
     margin: 2px;
     padding: 10px;
 }
@@ -170,9 +171,9 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 80%;
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
@@ -274,9 +275,11 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(23, 47, 99);
+    /* background-color: rgb(23, 47, 99); */
+    background-image: linear-gradient( to top right, rgb(63, 85, 133), rgb(23, 47, 99), rgb(23, 47, 99) , rgb(63, 85, 133)); 
     width: 45%;
     border-radius: 10px;
+    border: solid 2px black;
 }
 
 #imgs{
@@ -296,8 +299,8 @@ p{
 }
 
 #logo{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
     transform: rotate(45deg);
 }
 
@@ -309,6 +312,7 @@ p{
     border-radius: 25px;
     padding-right: 30px;
     font-size: 25px;
+    border: solid 1px black;
 }
 
 #det1{
