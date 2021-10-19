@@ -29,7 +29,7 @@ nav{
 }
 
 #tit{
-    font-size: 60px;
+    font-size: 3rem;
 }
 
 /* inicio */
@@ -48,7 +48,7 @@ header {
 }
 
 article{
-    margin: 35px;
+    /* margin: 35px; */
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     color: white;
@@ -73,7 +73,7 @@ article{
 #forca, #vel, #hab, #equip, #int, #poder{
     display: flex;
     border-radius: 10px;
-    width: 40%;
+    width: 13%;
     height: 30px;
     border: solid black 3px;
 }
@@ -133,54 +133,6 @@ article{
     cursor: pointer;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    article{
-        margin: 15px;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 1.3rem;
-        color: white;
-    }
-}
-
-@media only screen and (min-device-width : 1080px) {
-    #form1{
-        width: 50%;
-    }
-    
-    #form2{
-        width: 50%;
-    }
-
-    #forca, #vel, #hab, #equip, #int, #poder{
-        display: flex;
-        border-radius: 10px;
-        width: 35%;
-        height: 30px;
-        border: solid black 3px;
-    }
-
-    #image, #nome{
-        display: flex;
-        border-radius: 10px;
-        width: 35%;
-        height: 30px;
-        border: solid black 3px;
-    }
-    
-    #labelN, #nome{
-        margin-left: 50%;
-    }
-
-    #dadosC{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;   
-        background-image: url("/img/new.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-}
-}
 /* catalogo */
 #dado{
     display: flex;
@@ -277,6 +229,13 @@ p{
 }
 
 /* detalhes */
+#det{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 #acoes{
     display: flex;
     flex-direction: row;
@@ -301,4 +260,163 @@ p{
     height: 40px;
     margin: 15px;
     cursor: pointer;
+}
+
+#detalhe{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(23, 47, 99);
+    width: 75%;
+}
+
+#imgdetalhe{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    max-width:100%;
+    border-radius: 20px;
+}
+
+#det1, #det2, #det3, #det4, #det5, #det6{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px rgb(23, 47, 99);
+    margin: 3px;
+    border-radius: 25px;
+    padding-right: 30px;
+}
+
+#det1{
+    margin-left: 1%;
+    width: 70%;
+}
+
+#det2{
+    margin-left: 11%;
+    width: 60%;
+}
+
+#det3{
+    margin-left: 21%;
+    width: 50%;
+}
+
+#det4{
+    margin-left: 31%;
+    width: 40%;
+}
+
+#det5{
+    margin-left: 41%;
+    width: 30%;
+}
+
+#det6{
+    margin-left: 51%;
+    width: 20%;
+}
+/*-------------------------------------------------------------------------------------*/
+@media only screen and (min-device-width : 625px) and (max-device-width : 730px) {
+    li{
+        font-size: 1.8rem;
+
+    }
+}
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 624px) {
+    li{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-device-width : 180px) and (max-device-width : 599px) {
+    article{
+        margin: 15px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    #tit{
+        font-size: 2rem;
+    }
+
+    li{
+        font-size: 1rem;
+        padding-right: 70px;
+    }
+    
+#det1{
+    margin-left: 1%;
+    width: 85%;
+}
+
+#det2{
+    margin-left: 11%;
+    width: 75%;
+}
+
+#det3{
+    margin-left: 21%;
+    width: 65%;
+}
+
+#det4{
+    margin-left: 31%;
+    width: 55%;
+}
+
+#det5{
+    margin-left: 41%;
+    width: 45%;
+}
+
+#det6{
+    margin-left: 51%;
+    width: 35%;
+}
+}
+
+@media only screen and (min-device-width : 1080px) {
+    #form1{
+        width: 50%;
+    }
+    
+    #form2{
+        width: 50%;
+    }
+
+    #forca, #vel, #hab, #equip, #int, #poder{
+        display: flex;
+        border-radius: 10px;
+        width: 17%;
+        height: 30px;
+        border: solid black 3px;
+    }
+
+    #image, #nome{
+        display: flex;
+        border-radius: 10px;
+        width: 35%;
+        height: 30px;
+        border: solid black 3px;
+    }
+    
+    #labelN, #nome{
+        margin-left: 50%;
+    }
+
+    #dadosC{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;   
+        background-image: url("/img/new.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+}
 }
