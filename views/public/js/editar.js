@@ -1,10 +1,13 @@
 const closeMessage = document.querySelector("#close")
 const message = document.querySelector("#message")
 
-closeMessage.addEventListener("click", () =>
-    message.style.display = "none"
-)
 
-setTimeout(() =>
-    message.style.display = "none"
-    , 5000)
+setTimeout(() => {
+    message.style.display= "none";
+    message = "";
+    }, 5000);
+
+close.addEventListener("click", function(){
+    message.style.display = "none";
+    message = "";
+});

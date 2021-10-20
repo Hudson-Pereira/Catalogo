@@ -19,10 +19,16 @@
         <a href="./"><input type="button" value="HOME" id="nav"></button></a>
         <a href="./cadastro"><input type="button" value="CADASTRO" id="nav"></button></a>
     </nav>
+    <% if(message !== "") { %>
+        <section id="message">
+            <p><%= message %></p><span id="close">&times;</span>
+        </section>
+        <% } %>
     <header>
         <article id="tit">
             LISTA
-            <article>
+        <article>
+            
     </header>
     <main>
         <section id="dado">

@@ -484,11 +484,11 @@ p {
         width: 60%;
     }
 }
-
+/*--------------------------------spans------------------------------------------------*/
 section#message {
     padding: 1.5rem;
     background-color: rgb(197, 255, 214);
-    color: #004d04;
+    background-image: linear-gradient(to right, rgb(23, 47, 99), rgb(63, 85, 133), rgb(63, 85, 133), rgb(23, 47, 99));
     position: fixed;
     top: 3rem;
     left: 0;
@@ -509,6 +509,6 @@ section#message {
     }
     
     span#close:hover {
-      color: rgb(255, 0, 0);
+      color: rgb(23, 47, 99);
       transform: scale(1.1);
     }
