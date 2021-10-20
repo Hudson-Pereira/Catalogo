@@ -1,28 +1,29 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(63, 85, 133);
 }
 
-body#inicio{
-    background: url("/img/bannermarvel.jpg"); 
+body#inicio {
+    background: url("/img/bannermarvel.jpg");
     background-repeat: no-repeat;
     /* background-size: 100%; */
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
- 
+
 }
-nav{
-    display: flex;    
+
+nav {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgb(23, 47, 99);
 }
 
-#nav{
+#nav {
     display: flex;
     background-color: white;
     border-radius: 20px;
@@ -30,13 +31,13 @@ nav{
     cursor: pointer;
 }
 
-#tit{
+#tit {
     font-size: 3rem;
 }
 
 /* inicio */
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -44,99 +45,117 @@ h1{
 
 /* cadastro */
 header {
-    display: flex;    
+    display: flex;
     justify-content: center;
-    width:100%;
+    width: 100%;
 }
 
-article{
+article {
     /* margin: 35px; */
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     color: white;
 }
 
-#form1{
-    width: 50%;
+#form1 {
+    width: 52%;
 }
 
-#form2{
-    width: 50%;
+#form2 {
+    width: 52%;
 }
 
-#image, #nome{
+#image,
+#nome {
     display: flex;
     border-radius: 10px;
-    width: 65%;
+    width: 20%;;
     height: 30px;
     border: solid black 3px;
 }
 
-#forca, #vel, #hab, #equip, #int, #poder{
+#forca,
+#vel,
+#hab,
+#equip,
+#int,
+#poder {
     display: flex;
     border-radius: 10px;
-    width: 13%;
+    width: 10%;
     height: 30px;
     border: solid black 3px;
 }
 
-#labelIm, #image{
+#labelIm,
+#image {
     margin-left: 1%;
 }
 
-#labelH, #hab{
+#labelH,
+#hab {
     margin-left: 12%;
 }
 
-#labelF, #forca{
+#labelF,
+#forca {
     margin-left: 23%;
 }
 
-#labelV, #vel{
+#labelV,
+#vel {
     margin-left: 34%;
 }
 
-#labelN, #nome{
+#labelN,
+#nome {
     margin-left: 34%;
 }
 
-#labelE, #equip{
+#labelE,
+#equip {
     margin-left: 45%;
 }
 
-#labelI, #int{
+#labelI,
+#int {
     margin-left: 32%;
 }
 
-#labelP, #poder{
+#labelP,
+#poder {
     margin-left: 20%;
 }
 
-#labelIc, #icon{
+#labelIc,
+#icon {
     margin-left: 70%;
 }
 
-#dadosC{
+#dadosC {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;   
-    background-image: url("/img/images.jpeg");
-    background-repeat: no-repeat;
+    flex-direction: column;
+    background-image: linear-gradient(to top right, rgb(63, 85, 133), rgb(23, 47, 99), rgb(23, 47, 99), rgb(63, 85, 133));
+    
 }
 
-#nav2{
+#nav2 {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 20px;
     margin-top: 15px;
     width: 90px;
+    height: 40px;
     cursor: pointer;
 }
 
 /* catalogo */
-#dado{
+#dado {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -149,7 +168,7 @@ article{
     color: white;
 }
 
-#pers{
+#pers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -162,12 +181,12 @@ article{
     color: white;
     border: solid 2px black;
     /* background-color: rgb(23, 47, 99); */
-    background-image: linear-gradient( to top right, rgb(63, 85, 133), rgb(23, 47, 99), rgb(23, 47, 99) , rgb(63, 85, 133)); 
+    background-image: linear-gradient(to top right, rgb(63, 85, 133), rgb(23, 47, 99), rgb(23, 47, 99), rgb(63, 85, 133));
     margin: 2px;
     padding: 10px;
 }
 
-#persN{
+#persN {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -185,26 +204,26 @@ article{
 }
 
 
-#dados{
+#dados {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    
+
 }
 
-#herois{
+#herois {
     display: flex;
     width: 500px;
     height: 350px;
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     position: relative;
-    max-width:100%;
+    max-width: 100%;
 }
 
-span{
+span {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -213,40 +232,40 @@ span{
     transform: rotate(45deg);
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: column;
 }
 
-li{
+li {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 2rem;
 }
 
-p{
+p {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.5rem;
 }
 
 /* detalhes */
-#det{
+#det {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-#acoes{
+#acoes {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: rgb(63, 85, 133);
 }
 
-#navAt{
+#navAt {
     display: flex;
     align-items: center;
     background-color: yellow;
@@ -258,7 +277,7 @@ p{
     cursor: pointer;
 }
 
-#navExc{
+#navExc {
     display: flex;
     align-items: center;
     background-color: red;
@@ -270,41 +289,46 @@ p{
     cursor: pointer;
 }
 
-#detalhe{
+#detalhe {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     /* background-color: rgb(23, 47, 99); */
-    background-image: linear-gradient( to top right, rgb(63, 85, 133), rgb(23, 47, 99), rgb(23, 47, 99) , rgb(63, 85, 133)); 
+    background-image: linear-gradient(to top right, rgb(63, 85, 133), rgb(23, 47, 99), rgb(23, 47, 99), rgb(63, 85, 133));
     width: 45%;
     border-radius: 10px;
     border: solid 2px black;
 }
 
-#imgs{
+#imgs {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
 
-#imgdetalhe{
+#imgdetalhe {
     display: flex;
     width: 300px;
     height: 300px;
-    max-width:100%;
+    max-width: 100%;
     border-radius: 20px;
     margin: 10px;
 }
 
-#logo{
+#logo {
     width: 35%;
     height: 35%;
     transform: rotate(45deg);
 }
 
-#det1, #det2, #det3, #det4, #det5, #det6{
+#det1,
+#det2,
+#det3,
+#det4,
+#det5,
+#det6 {
     display: flex;
     justify-content: space-between;
     background-color: rgb(63, 85, 133);
@@ -315,167 +339,145 @@ p{
     border: solid 1px black;
 }
 
-#det1{
+#det1 {
     margin-left: 1%;
     width: 75%;
 }
 
-#det2{
+#det2 {
     margin-left: 11%;
     width: 65%;
 }
 
-#det3{
+#det3 {
     margin-left: 21%;
     width: 55%;
 }
 
-#det4{
+#det4 {
     margin-left: 31%;
     width: 45%;
 }
 
-#det5{
+#det5 {
     margin-left: 41%;
     width: 35%;
 }
 
-#det6{
+#det6 {
     margin-left: 51%;
     width: 25%;
 }
+
 /*-------------------------------------------------------------------------------------*/
 
 @media only screen and (min-device-width : 1080px) {
-    #form1{
-        width: 50%;
-    }
-    
-    #form2{
-        width: 50%;
-    }
 
-    #forca, #vel, #hab, #equip, #int, #poder{
-        display: flex;
-        border-radius: 10px;
-        width: 17%;
-        height: 30px;
-        border: solid black 3px;
-    }
-
-    #image, #nome{
-        display: flex;
-        border-radius: 10px;
-        width: 35%;
-        height: 30px;
-        border: solid black 3px;
-    }
-    
-    #labelN, #nome{
+    #labelN,
+    #nome {
         margin-left: 50%;
     }
 
-    #dadosC{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;   
-        background-size: 100%;
-        background-repeat: no-repeat;
-}
 }
 
 @media only screen and (min-device-width : 731px) and (max-device-width : 1169px) {
-    li{
+    li {
         font-size: 1.8rem;
         display: flex;
         justify-content: center;
 
     }
-    #detalhe{
+
+    #detalhe {
         width: 50%;
     }
 
-#det1{
-    margin-left: 1%;
-    width: 85%;
-}
+    #det1 {
+        margin-left: 1%;
+        width: 85%;
+    }
 
-#det2{
-    margin-left: 11%;
-    width: 75%;
-}
+    #det2 {
+        margin-left: 11%;
+        width: 75%;
+    }
 
-#det3{
-    margin-left: 21%;
-    width: 65%;
-}
+    #det3 {
+        margin-left: 21%;
+        width: 65%;
+    }
 
-#det4{
-    margin-left: 31%;
-    width: 55%;
-}
+    #det4 {
+        margin-left: 31%;
+        width: 55%;
+    }
 
-#det5{
-    margin-left: 41%;
-    width: 45%;
-}
+    #det5 {
+        margin-left: 41%;
+        width: 45%;
+    }
 
-#det6{
-    margin-left: 51%;
-    width: 35%;
-}
+    #det6 {
+        margin-left: 51%;
+        width: 35%;
+    }
 }
 
 @media only screen and (min-device-width : 625px) and (max-device-width : 730px) {
-    li{
+    li {
         font-size: 1.8rem;
         display: flex;
         justify-content: center;
 
     }
-    #detalhe{
-    width: 80%;
+
+    #detalhe {
+        width: 80%;
     }
 }
 
 @media only screen and (min-device-width : 600px) and (max-device-width : 624px) {
-    li{
+    li {
         font-size: 1.5rem;
         display: flex;
         justify-content: center;
     }
 
-    #detalhe{
+    #detalhe {
         width: 80%;
     }
 }
 
 @media only screen and (min-device-width : 180px) and (max-device-width : 599px) {
-    article{
+    article {
         margin: 15px;
         font-family: 'Bebas Neue', cursive;
         font-size: 1.3rem;
         color: white;
     }
 
-    #imgdetalhe{
+    #imgdetalhe {
         margin: 0;
     }
 
-    #detalhe{
+    #detalhe {
         width: 80%;
     }
 
-    #tit{
+    #tit {
         font-size: 2rem;
     }
 
-    li{
+    li {
         font-size: 1rem;
     }
-    
-    #det1, #det2, #det3, #det4, #det5, #det6{
+
+    #det1,
+    #det2,
+    #det3,
+    #det4,
+    #det5,
+    #det6 {
         padding-right: 30px;
         font-size: 15px;
         margin-left: 0px;
