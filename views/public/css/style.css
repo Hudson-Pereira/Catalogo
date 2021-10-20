@@ -51,7 +51,7 @@ header {
 }
 
 article {
-    /* margin: 35px; */
+    margin-left: 20px;
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     color: white;

@@ -16,7 +16,10 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
 
     const { image, nome, forca, vel, hab, equip, int, poder } = req.body
-    message = `Sucesso`
+    message = `Herói ${nome} cadastrado com sucesso.`
+    setTimeout(() => {
+        message = "";
+        }, 5000);
     if (!image || !nome || !forca || !vel || !hab || !hab || !equip || !int || !poder) {
         res.render("cadastro", { message: "Favor corrigir os dados" })
     }
