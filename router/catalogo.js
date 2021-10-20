@@ -37,7 +37,7 @@ router.post("/", async (req, res) => {
             Poder: poder
         })
         
-        res.redirect("catalogo");
+        res.redirect("./catalogo");
 
     } catch (error) {
         console.log(error)
